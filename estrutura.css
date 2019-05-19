@@ -8,36 +8,37 @@ body {
 }
 
 
-#header {
+#header { /*logo com o nome do curso e matéria*/
     display: grid;
     grid-template-columns: 30% 70%;
-    margin;align-items: center;
     margin: 0 5%;
+    align-items: center;
 }
 
 .logo {
-    width: 200px;
+    width: 270px;
     height: 150px;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#menu {
-    background-color: cadetblue;
-    margin: 0 50px; 
+#menu { /*menu horizontal*/
+    background-color: aquamarine;
+    border: 2px solid rgb(62, 185, 144);
     text-align: center;
-    height: 40px;
-}
-#menu ul li {
-    display: inline;
-    list-style: none;
-    height: 40px;
+    margin: 0 100px;
+
 }
 
-#menu a {
-    border: 2px solid gray;
+#menu ul li {
+    display: inline-flex;
+    list-style: none;
     padding: 0 50px;
     text-decoration: none;
     color: black;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 /* #menu a {
@@ -51,23 +52,33 @@ body {
     letter-spacing: 0.2em;
 } */
 
-#conteudo-coluna {
+#conteudo-coluna { /*div que junta a parte do conteúdo com a coluna lateral*/
     display: grid;
     grid-template-columns: 75% 25%;
     margin: 30px 100px;
-    border: 2px dotted;
 }
 
 #coluna {
+    background-color: aquamarine;
+    border: 2px solid rgb(62, 185, 144);
     margin-left: 50px;
     padding: 10px;
-    border: 2px double red;
+}
+
+#coluna ul li{
+    margin: 10px 0;
 }
 
 #coluna a {
     text-decoration: none;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+}
+
+#coluna a:hover {
+    background-color: rgb(62, 185, 144);
+    border-bottom: 1px solid;
 }
 
 n{
@@ -78,6 +89,40 @@ n{
 p {
     text-align: justify;
 }
-footer{
+
+.curso {
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+footer{ /*rodapé da página*/
     text-align: center;
+    border: 2px solid lightgray;
+    margin: 0 100px;
+    margin-bottom: 10px;    
+}
+
+h1{
+    font-size: 26px;
+    text-align: center; 
+    color: darkred;
+}
+
+.img-win{
+    float: right;
+    margin-left: 10px;
+    
+    padding-top: 2px;
+}
+
+.img-mac {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.img-ubuntu {
+    float: right;
+    margin-left: 10px;
+    padding-top: 2px;
 }
