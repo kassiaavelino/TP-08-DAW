@@ -3,8 +3,7 @@ body {
     margin: 10px 100px;
     padding: 0 30px;
     font-style: italic;
-    font-size: 20px;
-    
+    font-size: 20px;    
 }
 
 
@@ -13,6 +12,8 @@ body {
     grid-template-columns: 30% 70%;
     margin: 0 5%;
     align-items: center;
+    border: 2px solid lightgray; 
+    margin: 2px 100px;
 }
 
 .logo {
@@ -55,18 +56,27 @@ body {
 #conteudo-coluna { /*div que junta a parte do conteúdo com a coluna lateral*/
     display: grid;
     grid-template-columns: 75% 25%;
-    margin: 30px 100px;
+    margin: 15px 100px;
+    border: 2px solid lightgray; 
+    padding: 5px;
 }
 
 #coluna {
     background-color: aquamarine;
     border: 2px solid rgb(62, 185, 144);
     margin-left: 50px;
-    padding: 10px;
+    margin-top: 60px;
+    height: 375px;
+}
+
+#coluna ul {
+    padding-inline-start: 30px;
 }
 
 #coluna ul li{
     margin: 10px 0;
+    list-style: none;
+    
 }
 
 #coluna a {
@@ -111,7 +121,6 @@ h1{
 .img-win{
     float: right;
     margin-left: 10px;
-    
     padding-top: 2px;
 }
 
@@ -125,4 +134,27 @@ h1{
     float: right;
     margin-left: 10px;
     padding-top: 2px;
+}
+
+.curriculo {
+    padding-left: 20px;
+}
+
+.dev {
+    float: left;
+    transform: rotate(90deg);
+    margin-top: 30px;
+    margin-bottom: 100%;
+    padding: 10px;
+    padding-bottom: all;
+    background-color: bisque;
+}
+
+.dados ul {
+    list-style: none;
+}
+
+.main {
+    text-align: center;
+    font-weight: 900;
 }
